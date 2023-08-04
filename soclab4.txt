@@ -1,0 +1,298 @@
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~
+$ git --version
+git version 2.41.0.windows.3
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~
+$ mkdir demo
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~
+$ cd demo
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo
+$ git init
+Initialized empty Git repository in C:/Users/ADMIN/demo/.git/
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ ^C
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ ^C
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ git add test.txt
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ git commit -m "my first commit"
+[master (root-commit) 9b0eb8d] my first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ git config --global user.email "srilakshmipulipati21@gmail.com"
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ git commit -m "my first commit"
+On branch master
+nothing to commit, working tree clean
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ git clone ^[[200~https://github.com/srilu-reddy/socl4.git~
+Cloning into 'socl4.git~'...
+fatal: protocol '?[200~https' is not supported
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ git clonehttps://github.com/srilu-reddy/socl4.git
+git: 'clonehttps://github.com/srilu-reddy/socl4.git' is not a git command. See 'git --help'.
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ git clone "https://github.com/srilu-reddy/socl4.git"
+Cloning into 'socl4'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ vim demo.txt
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/demo (master)
+$ cd
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~
+$ cd
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~
+$ git clone "https://github.com/srilu-reddy/socl4.git"
+Cloning into 'socl4'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~
+$ ls
+ 13.py                    Downloads/                                                                                     Pictures/          Untitled15.ipynb   Untitled5.ipynb   ntuser.dat.LOG2
+ 15.py                    Favorites/                                                                                     PrintHood@         Untitled16.ipynb   Untitled6.ipynb   ntuser.ini
+ 1b.py                    IntelGraphicsProfiles/                                                                         Recent@            Untitled17.ipynb   Untitled7.ipynb   sample.txt
+ 2a.py                    Links/                                                                                        'Saved Games'/      Untitled18.ipynb   Untitled8.ipynb   scikit_learn_data/
+ 2b.py                   'Local Settings'@                                                                               Searches/          Untitled19.ipynb   Untitled9.ipynb   socl4/
+'3D Objects'/             MediaGet2/                                                                                     SendTo@            Untitled2.ipynb    Videos/           sw2.py
+ 5.python.py              Music/                                                                                        'Start Menu'@       Untitled20.ipynb   anaconda3/        test-1/
+ 9.pyt.py                'My Documents'@                                                                                 Templates@         Untitled21.ipynb   cpp.py            test2/
+ AndroidStudioProjects/   NTUSER.DAT                                                                                     Untitled.ipynb     Untitled22.ipynb   demo/             untitled
+ AppData/                 NTUSER.DAT{5ab1d650-c175-11ed-a567-bce92fa0c844}.TM.blf                                        Untitled1.ipynb    Untitled23.ipynb   demo.txt          untitled.txt
+'Application Data'@       NTUSER.DAT{5ab1d650-c175-11ed-a567-bce92fa0c844}.TMContainer00000000000000000001.regtrans-ms   Untitled10.ipynb   Untitled24.ipynb   ex1.py            untitled1
+ Contacts/                NTUSER.DAT{5ab1d650-c175-11ed-a567-bce92fa0c844}.TMContainer00000000000000000002.regtrans-ms   Untitled11.ipynb   Untitled25.ipynb   ex2.py            weka.log
+ Cookies@                 NetHood@                                                                                       Untitled12.ipynb   Untitled26.ipynb   j2mewtk/
+ Desktop/                'New folder'/                                                                                   Untitled13.ipynb   Untitled3.ipynb    jkl.py
+ Documents/               OneDrive/                                                                                      Untitled14.ipynb   Untitled4.ipynb    ntuser.dat.LOG1
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~
+$ cd socl4
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ ls
+demo.txt
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ vim demo.txt
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ vim demo.txt
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git commit -m "my first commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git add demo.txt
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git commit -m "my first commit"
+[main 9baae47] my first commit
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git remote -v
+origin  https://github.com/srilu-reddy/socl4.git (fetch)
+origin  https://github.com/srilu-reddy/socl4.git (push)
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 287 bytes | 287.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/srilu-reddy/socl4.git
+   9e94f2b..9baae47  main -> main
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ vim demo.txt
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git commit -m "my second commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git remote -v
+origin  https://github.com/srilu-reddy/socl4.git (fetch)
+origin  https://github.com/srilu-reddy/socl4.git (push)
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git push origin main
+Everything up-to-date
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ vim demo.txt
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git commit -m "my second commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git add demo.txt
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   demo.txt
+
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git commit -m "my second commit"
+[main 8a42de7] my second commit
+ 1 file changed, 1 insertion(+)
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git remote -v
+origin  https://github.com/srilu-reddy/socl4.git (fetch)
+origin  https://github.com/srilu-reddy/socl4.git (push)
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 299 bytes | 299.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/srilu-reddy/socl4.git
+   9baae47..8a42de7  main -> main
+
+ADMIN@DESKTOP-KA2I6VR MINGW64 ~/socl4 (main)
+$
